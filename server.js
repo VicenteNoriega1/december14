@@ -155,6 +155,20 @@ app.get('/health', (req, res) => {
 
 // Start the server
 const PORT = process.env.PORT || 3000;
+// REQUIRED root endpoint for ChatGPT MCP validation
+app.get("/", (req, res) => {
+  res.status(200).json({
+    name: "current-time-mcp",
+    version: "1.0.0",
+    description: "Returns the current time when asked",
+    endpoints: {
+      mcp: "/mcp",
+      health: "/health"
+    }
+  });
+});
+
+
 app.listen(PORT, () => {
   console.log(`🚀 Current Time ChatGPT App is running!`);
   console.log(`📍 Homepage: http://localhost:${PORT}`);
