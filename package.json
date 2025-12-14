@@ -1,0 +1,11 @@
+{
+  "name": "chatgpt-time-app",
+  "version": "1.0.0",
+  "description": "Minimal ChatGPT App using OpenAI Apps SDK that returns current time",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node app.js",
+    "demo": "node app.js"
+  }
+}
