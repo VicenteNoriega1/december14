@@ -1,0 +1,19 @@
+{
+  "name": "time-chatgpt-app",
+  "version": "1.0.0",
+  "description": "A simple ChatGPT app that shows the current time",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": ["chatgpt", "apps", "mcp", "openai"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "express": "^4.18.2",
+    "zod": "^3.23.8"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Current Time App",
+  "name_for_model": "time_app",
+  "description_for_human": "Get the current date and time",
+  "description_for_model": "Use this app when the user asks for the current time, date, or what time it is.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "http://localhost:3000/openapi.json"
+  }
+}
